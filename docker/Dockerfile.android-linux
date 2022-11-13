@@ -1,0 +1,150 @@
+# How to Build
+# 1. Run following in Linux
+# 2. Execute this command in a terminal
+#    cd Alteisen\docker
+#    docker build -t androqt:latest -f Dockerfile.android-linux .
+#
+# How to Run
+# 1. Run following in Linux
+# 2. Execute this command in a terminal
+#    cd Alteisen\docker
+#    docker run \
+#        -v "${PWD}/..:/github/workspace" \
+#        --rm \
+#        -it  \
+#        -w "/github/workspace" \
+#        androqt:latest bash
+#
+
+# JDKが必要なので、ベースイメージにopenjdkを使います。
+FROM openjdk:11-jdk-slim
+
+# apt-utilsをインストールしなくても警告が表示されいようにする
+ENV DEBCONF_NOWARNINGS yes
+
+# sdkmanager を使って現在のマシンとは異なるオペレーティングシステム用のパッケージをダウンロードする場合に使います。
+# 今回は、openjdk:8-jdk-slimがAlpine Linuxなので指定しなくても大丈夫なのですが、明示的に指定しておきます。
+ENV REPO_OS_OVERRIDE "linux"
+
+ARG ANDROID_SDK_TOOLS="4333796"
+ARG ANDROID_NDK_VERSION="r22b"
+ARG GRADLE_VERSION="5.6.4"
+
+
+# 環境変数
+ENV ANDROID_HOME /opt/android-sdk-linux
+ENV ANDROID_SDK_ROOT $ANDROID_HOME
+ENV ANDROID_TOOLS $ANDROID_SDK_ROOT/tools
+ENV ANDROID_PLATFORM_TOOLS $ANDROID_SDK_ROOT/platform-tools
+ENV ANDROID_NDK="/opt/android-ndk-linux/android-ndk-$ANDROID_NDK_VERSION"
+
+ENV GRADLE_HOME /opt/gradle/gradle-${GRADLE_VERSION}
+
+ARG QT_VERSION=6.2.4
+ENV QT_HOME=/opt/Qt
+ENV QT_HOME_VERSION=$QT_HOME/$QT_VERSION
+ARG QT_PACKAGES="qt,qt.qt6.624,qt.qt6.624.gcc_64,qt.qt6.624.android_armv7"
+
+RUN dpkg --add-architecture i386
+RUN apt-get update
+
+RUN apt-get install -y \
+    wget \
+    curl \
+    unzip \
+    git \
+    g++ \
+    make \
+    lib32z1 \
+    lib32ncurses6 \
+    libbz2-1.0:i386 \
+    lib32stdc++6 \
+    cmake \
+    && apt-get clean
+
+#install dependencies for Qt installer
+RUN apt-get install -y \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    && apt-get clean
+
+#install dependencies for Qt modules
+RUN apt-get install -y \
+    libfontconfig1 \
+    libdbus-1-3 \
+    libx11-xcb1 \
+    libnss3-dev \
+    libasound2-dev \
+    libxcomposite1 \
+    libxrandr2 \
+    libxcursor-dev \
+    libegl1-mesa-dev \
+    libxi-dev \
+    libxss-dev \
+    libxtst6 \
+    libgl1-mesa-dev \
+    && apt-get clean
+
+RUN	apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    wget \
+    unzip \
+    dirmngr \
+    gnupg \
+    software-properties-common \
+    && apt-get clean
+ 
+
+#dependencies for Qt installer
+RUN apt-get install -y \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    && apt-get clean
+
+# Qt のインストール
+RUN apt-get install -y \
+    python3 \
+    pip \
+    && apt-get clean
+
+RUN pip install aqtinstall
+RUN aqt install-qt --outputdir $QT_HOME linux android $QT_VERSION android_armv7 --autodesktop -m all
+
+# gradleをダウンローして解凍します。
+RUN wget --quiet --output-document=gradle-bin.zip https://services.gradle.org/distributions/gradle-7.3.3-bin.zip
+RUN unzip -q -d gradle gradle-bin.zip
+RUN rm -rf gradle-bin.zip
+ENV PATH="$GRADLE_HOME/bin:${PATH}"
+
+# Android SDK Manager のダウンロード
+RUN wget --quiet --output-document=commandline-tools.zip https://dl.google.com/android/repository/commandlinetools-linux-8512546_latest.zip
+RUN unzip -q -d $ANDROID_SDK_ROOT commandline-tools.zip
+RUN rm -rf commandline-tools.zip
+ENV PATH="$ANDROID_TOOLS/bin:${PATH}"
+ENV PATH="$ANDROID_PLATFORM_TOOLS/bin:${PATH}"
+ENV PATH="${ANDROID_SDK_ROOT}/cmake/3.22.1/bin:${PATH}"
+ENV PATH="${ANDROID_SDK_ROOT}/cmdline-tools/bin:${PATH}"
+
+# Android SDK Manager のインストール
+RUN mkdir ~/.android && \
+    touch ~/.android/repositories.cfg
+RUN yes | sdkmanager --sdk_root=${ANDROID_SDK_ROOT} --licenses >/dev/null
+
+# Android SDK Manager でツール群をインストール
+# ( https://developer.android.com/about/versions/11/setup-sdk )
+# Build tools 30.0.2
+RUN sdkmanager --sdk_root=${ANDROID_SDK_ROOT} "build-tools;30.0.2" >/dev/null
+# API Level 30
+RUN sdkmanager --sdk_root=${ANDROID_SDK_ROOT} "platforms;android-30" >/dev/null
+RUN sdkmanager --sdk_root=${ANDROID_SDK_ROOT} "platform-tools" >/dev/null
+RUN sdkmanager --sdk_root=${ANDROID_SDK_ROOT} --install "cmake;3.22.1" >/dev/null
+
+# NDK のダウンロード & インストール
+RUN wget --quiet --output-document=android-ndk.zip https://dl.google.com/android/repository/android-ndk-${ANDROID_NDK_VERSION}-linux-x86_64.zip
+RUN unzip -q -d /opt/android-ndk-linux android-ndk.zip
+RUN rm -rf android-ndk.zip
+
+
+# パスの設定
+ENV PATH="$QT_HOME_VERSION/android_armv7/bin:${PATH}"
