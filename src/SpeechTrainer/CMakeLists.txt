@@ -37,6 +37,6 @@ set_target_properties(appSpeechTrainer PROPERTIES
 target_link_libraries(appSpeechTrainer
     PRIVATE Qt6::Quick)
 
-install(TARGETS appSpeechTrainer
-    BUNDLE DESTINATION .
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
+#install(TARGETS appSpeechTrainer
+#    BUNDLE DESTINATION .
+#    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
