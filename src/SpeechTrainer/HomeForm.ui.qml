@@ -1,5 +1,6 @@
 import QtQuick
 import QtQuick.Controls
+import QtQuick.Layouts
 
 Item {
     id: root
@@ -10,33 +11,54 @@ Item {
     property alias btnToA: btnToA
     property alias btnToB: btnToB
 
-    Rectangle {
-        id: myrect
+    GridLayout {
+        id: rootGrid
         anchors.fill: parent
+        width: parent.width
+        height: parent.height
+        rowSpacing: 0
+        columnSpacing: 0
+        flow: GridLayout.TopToBottom
 
-        Column {
-            anchors.centerIn: parent
+        Rectangle {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
             Text {
                 id: mylabel
-                anchors.horizontalCenter: parent.horizontalCenter
+                anchors.centerIn: parent
+                //anchors.horizontalCenter: parent.horizontalCenter
                 text: "Home Screen"
             }
-
-            Button {
-                id: btnToA
-                anchors.horizontalCenter: parent.horizontalCenter
-                width: 100
-                height: 30
-                text: "Screen A"
+        }
+        Rectangle {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            Column {
+                anchors.centerIn: parent
+                spacing: 50
+                height: parent.height
+                Button {
+                    id: btnToA
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    palette.buttonText: "black"
+                    width: 100
+                    height: 30
+                    text: "Screen A"
+                }
+                Button {
+                    id: btnToB
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    palette.buttonText: "black"
+                    width: 100
+                    height: 30
+                    text: "Screen B"
+                }
             }
+        }
+        Rectangle {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
 
-            Button {
-                id: btnToB
-                anchors.horizontalCenter: parent.horizontalCenter
-                width: 100
-                height: 30
-                text: "Screen B"
-            }
         }
     }
 }

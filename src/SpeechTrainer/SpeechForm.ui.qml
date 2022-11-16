@@ -50,6 +50,8 @@ Item {
                 id: finishButton
                 width: 30
                 height: 30
+                palette.buttonText: "black"
+                text: qsTr("<")
             }
 
             Rectangle {

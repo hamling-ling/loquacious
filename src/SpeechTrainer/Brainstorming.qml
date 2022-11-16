@@ -16,6 +16,7 @@ BrainstormingForm {
 
     keywordRepeater {
         delegate:Button {
+            palette.buttonText: "black"
             text: model.modelData
             onClicked: {
                 mainModel.select(model.modelData);
@@ -32,10 +33,18 @@ BrainstormingForm {
             property int indexOfThisDelegate: index
             Row {
                 Text {
+                    id: indexText
+                    width: listHost.width/20
+                    height: 30
+                    text: Number(index + 1) + qsTr(".")
+                    elide: Text.ElideRight
+                }
+                Text {
                     leftPadding: 5
                     wrapMode: Text.WordWrap
-                    //text: text ? text: qsTr("")
-                    text: sentence
+                    width: listHost.width - indexText.width
+                    height: 30
+                    text: sentence ? sentence: qsTr("")
                 }
             }
         }

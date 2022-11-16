@@ -30,7 +30,6 @@ qt_add_qml_module(appSpeechTrainer
     Home.qml HomeForm.ui.qml
     Speech.qml SpeechForm.ui.qml
     Brainstorming.qml BrainstormingForm.ui.qml
-
 )
 
 set_target_properties(appSpeechTrainer PROPERTIES
