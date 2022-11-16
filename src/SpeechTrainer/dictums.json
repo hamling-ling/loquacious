@@ -1,0 +1,273 @@
+{
+    "dictums": [
+    {
+        "id": 1,
+        "sentence":"It is a higly controversial issue whether or not nuclear power generation should be promoted",
+        "key_words":["nuclear", "energy", "people", "society"]
+    },
+    {
+        "id": 2,
+        "sentence":"There have been a lot of discussions and debates about whether or not same-sex marriage should be leagalized.",
+        "key_words":["same-sex marriage", "legal", "people", "society", "gender"]
+    },
+    {
+        "id": 3,
+        "sentence":"There is a growing tendency toward studying abroad among young people in the world.",
+        "key_words":["student", "study abroad", "tendency", "education", "school", "people"]
+    },
+    {
+        "id": 4,
+        "sentence":"There is a growing awareness that the mass media gives too much coverage to the private lives of famous people.",
+        "key_words":["media", "privacy", "people", "coverage"]
+    },
+    {
+        "id": 5,
+        "sentence":"It is often pointed out that science and technology allow students to obtain various kinds of information very quickly.",
+        "key_words":["science", "technology", "student", "information", "computer", "internet"]
+    },
+    {
+        "id": 6,
+        "sentence":"There are both advantages and disadvantages to the seniority system, but I think that the advantages outweight the disadvantages for the following three reasons.",
+        "key_words":["seniority system", "aging society", "work", "company", "pay", "salary"]
+    },
+    {
+        "id": 7,
+        "sentence":"Some people argue that national identity is becoming less important in today's global society, and other people don't. Personally, I believe that national identity is losing its importance for the following two reasons.",
+        "key_words":["people", "identity", "society"]
+    },
+    {
+        "id": 8,
+        "sentence":"Exam-centric education with little emphasis on character divelopment is a major contributing factor in causing juvenile delinquency.",
+        "key_words":["education", "juvenile delinquency", "school", "class", "child", "mental"]
+    },
+    {
+        "id": 9,
+        "sentence":"World hunger is the root cause of terrorism, which has more far-reaching effects on the world than terrorist attacks.",
+        "key_words":["hunger", "poverty", "terrorism", "death", "politics"]
+    },
+    {
+        "id": 10,
+        "sentence":"Cloning will lead to the eugenic manipulation of genes, which can undermine biodiversity.",
+        "key_words":["biotechnology", "genetics", "ethics", "diversity"]
+    },
+    {
+        "id": 11,
+        "sentence":"Sports contribute to children's mental growth by developing a team spilit and a sense of dicipline among them.",
+        "key_words":["sport", "child", "education", "school", "class"]
+    },
+    {
+        "id": 12,
+        "sentence":"Nuclear accidents have brought about a drastic change in public awareness about renewable energy.",
+        "key_words":["nuclear", "energy", "people", "pollution", "environment"]
+    },
+    {
+        "id": 13,
+        "sentence":"Bunkruptcy or jobloss has a devastating impact on entrepreneurs or business people's self-image.",
+        "key_words":["economy", "work", "money", "career", "income", "pay"]
+    },
+    {
+        "id": 14,
+        "sentence":"Performance-enhancing drugs like steroids have a harmful effect on the human body.",
+        "key_words":["medicine", "hospital", "cure", "drug"]
+    },
+    {
+        "id": 15,
+        "sentence":"Climate change will have dire consequences for all living creatures unless effective countermeasures are taken.",
+        "key_words":["climate change", "global warming", "extinction"]
+    },
+    {
+        "id": 16,
+        "sentence":"Japan should play a vital role in promoting nuclear disarmament as the sole victim of atomic bombings.",
+        "key_words":["japan", "atomic bomb", "nuclear", "war"]
+    },
+    {
+        "id": 17,
+        "sentence":"Empathetic [empatic] listening is the key ingredient of successful marital and parent-child relationships.",
+        "key_words":["family", "child", "education", "education"]
+    },
+    {
+        "id": 18,
+        "sentence":"Individual privacy outweighs the public right to know except in the case of coverage of political corruption.",
+        "key_words":["privacy", "public right", "politics", "people"]
+    },
+    {
+        "id": 19,
+        "sentence":"Nuclear disarmament efforts are a political imperative.",
+        "key_words":["nuclear", "government", "politics", "war", "atomic bomb"]
+    },
+    {
+        "id": 20,
+        "sentence":"Alchol [gambling / pornography] is a necessary evil.",
+        "key_words":["people", "life", "medicine", "hospital"]
+    },
+    {
+        "id": 21,
+        "sentence":"Nuclear power [cloning technology] is a double-edged sword.",
+        "key_words":["nuclear", "energy", "environment", "polution", "global warming", "climate change"]
+    },
+    {
+        "id": 22,
+        "sentence":"There is a trade-off between her career and her family [product quality and profit / welfare and economic development].",
+        "key_words":["trade-off", "carrer", "family"]
+    },
+    {
+        "id": 23,
+        "sentence":"Parents can se a good example for their children by juggling house work and office work.",
+        "key_words":["parent", "child", "role model", "education", "child rearing", "company", "family"]
+    },
+    {
+        "id": 24,
+        "sentence":"Hosting the Olympic Games gives the host country a great opportunity to showcase its unique culture.",
+        "key_words":["olympic", "event", "government", "country", "culture", "host"]
+    },
+    {
+        "id": 25,
+        "sentence":"Ecotourism will enlighten the general public about the importance of nature preservation.",
+        "key_words":["ecotourism", "tourism", "environment", "nature", "global warming", "climate change"]
+    },
+    {
+        "id": 26,
+        "sentence":"Parents should serve as role models who set a good example for their children to follow.",
+        "key_words":["parent", "child", "role model", "education", "child rearing", "family"]
+    },
+    {
+        "id": 27,
+        "sentence":"Alternative medicine is characterized by holistic treatment, which can enhance human's natural healing power.",
+        "key_words":["medicine", "heal", "drug", "cure", "hospital"]
+    },
+    {
+        "id": 28,
+        "sentence":"The leader's policy epitomizes the politics of the country marked by pragmatics.",
+        "key_words":["leader", "politics", "pragmatics", "country"]
+    },
+    {
+        "id": 29,
+        "sentence":"Many people think that they deserve higher pay, and nurses are case in point.",
+        "key_words":["people", "work", "income", "salary", "pay", "company", "money"]
+    },
+    {
+        "id": 30,
+        "sentence":"Emission trading will boost the economy and raise public awareness about environmental degradation.",
+        "key_words":["environment", "emission trading", "economy", "nature", "nature preservation", "environmental degradation", "people"]
+    },
+    {
+        "id": 31,
+        "sentence":"Women's participation in paid work will promote gender equality and female empowerment.",
+        "key_words":["gender", "equality", "female empowerment", "work", "company"]
+    },
+    {
+        "id": 32,
+        "sentence":"The internet has greatly facilitated an exchange of ideas and information with other people.",
+        "key_words":["internet", "communication", "information", "science", "technology"]
+    },
+    {
+        "id": 33,
+        "sentence":"One of the major functions of the UN is to pave the way for world peace.",
+        "key_words":["UN", "peace", "stability"]
+    },
+    {
+        "id": 34,
+        "sentence":"Some computer games will encourage violent behavior among young children.",
+        "key_words":["children", "computer", "game", "violence", "education", "internet"]
+    },
+    {
+        "id": 35,
+        "sentence":"The seniority system allows companies to keep a skilled workforce because it enhances worker's loyalty to their companies.",
+        "key_words":["seniority", "aging society", "work", "loyalty", "company"]
+    },
+    {
+        "id": 36,
+        "sentence":"Student-oriented classes will stimulate student's interest in class and develop critical thinking abilities.",
+        "key_words":["school", "class", "critical thinking"]
+    },
+    {
+        "id": 37,
+        "sentence":"Artistic and athletic activities will enhance the quality of your life while recharging your batteries.",
+        "key_words":["art", "sport", "athletic", "artistic"]
+    },
+    {
+        "id": 38,
+        "sentence":"Interactions with people with different social backgrounds will broaden your cultural horizons and develop your interpersonal skills.",
+        "key_words":["culture", "communication", "interpersonal skill", "social background", "ethnic background", "race"]
+    },
+    {
+        "id": 39,
+        "sentence":"Economic sanctions can maximize the pressure on the leadership, while minimizing the suffering of average citizens.",
+        "key_words":["economy", "sanction", "leader", "citizen"]
+    },
+    {
+        "id": 40,
+        "sentence":"Protectionism will discourage global trande and investment, thus undermining the global economy.",
+        "key_words":["trade", "protectionism", "free trade", "investment", "economy", "trade"]
+    },
+    {
+        "id": 41,
+        "sentence":"School uniforms, which are designed to develop students' conformity, undermine the development of their individuality and creativity.",
+        "key_words":["school", "children", "student"]
+    },
+    {
+        "id": 42,
+        "sentence":"Outsourcing will engender industrial hollowing-outs, thus exacerbating domestic unemployment.",
+        "key_words":["work", "outsource", "inductory", "employment"]
+    },
+    {
+        "id": 43,
+        "sentence":"Radioactive waste poses a serious threat to the environment for present and future generations.",
+        "key_words":["environment", "nuclear", "pollution", "nature"]
+    },
+    {
+        "id": 44,
+        "sentence":"Cyber terrorism can cause social dysfunctions and paralyze the government system.",
+        "key_words":["cyber", "security", "government"]
+    },
+    {
+        "id": 45,
+        "sentence":"The government bailout for major companies in financial trouble will put a financial burden on the government.",
+        "key_words":["finance", "company", "government"]
+    },
+    {
+        "id": 46,
+        "sentence":"Work-sharing will increase the number of low-income workers, thus widening the income disparity between workers.",
+        "key_words":["economy", "work", "income"]
+    },
+    {
+        "id": 47,
+        "sentence":"Social and political uphevals will threaten the national security.",
+        "key_words":["security", "politics"]
+    },
+    {
+        "id": 48,
+        "sentence":"The severe weather hampered rescure operations in disaster-striken areas.",
+        "key_words":["disaster", "weather", "rescure"]
+    },
+    {
+        "id": 49,
+        "sentence":"The threat of the loss of freedom through imprisonment can deter potential criminals from committing crimes.",
+        "key_words":["crime", "capital panishment", "legal"]
+    },
+    {
+        "id": 50,
+        "sentence":"One of the countermeasures for global warming is to promote afforestation and reforestation to prevent deforestation and desertification.",
+        "key_words":["global warming", "climate change", "nature", "environment"]
+    },
+    {
+        "id": 51,
+        "sentence":"It is very important to impose strict regulations on the poaching and smuggling of endengered species.",
+        "key_words":["environment", "regulations", "extinction"]
+    },
+    {
+        "id": 52,
+        "sentence":"The government will have to raise the age of pension eligibility and decrease the amount of pension provision.",
+        "key_words":["aging society", "government", "pension"]
+    },
+    {
+        "id": 53,
+        "sentence":"College education is not practical enough to meet the needs of increasingly globalizing society.",
+        "key_words":["education", "college", "school"]
+    },
+    {
+        "id": 54,
+        "sentence":"Nuclear power is a clean energy that can alleviate global warming by dramatically reducing CO2 emissions.",
+        "key_words":["nuclear", "energy", "global warming", "climate change", "CO2", "greenhouse gas", "environment"]
+    }]
+}
