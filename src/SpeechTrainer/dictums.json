@@ -168,7 +168,7 @@
     {
         "id": 34,
         "sentence":"Some computer games will encourage violent behavior among young children.",
-        "key_words":["children", "computer", "game", "violence", "education", "internet"]
+        "key_words":["child", "computer", "game", "violence", "education", "internet"]
     },
     {
         "id": 35,
@@ -203,12 +203,12 @@
     {
         "id": 41,
         "sentence":"School uniforms, which are designed to develop students' conformity, undermine the development of their individuality and creativity.",
-        "key_words":["school", "children", "student"]
+        "key_words":["school", "child", "student"]
     },
     {
         "id": 42,
         "sentence":"Outsourcing will engender industrial hollowing-outs, thus exacerbating domestic unemployment.",
-        "key_words":["work", "outsource", "inductory", "employment"]
+        "key_words":["work", "outsource", "industory", "employment"]
     },
     {
         "id": 43,
@@ -253,7 +253,7 @@
     {
         "id": 51,
         "sentence":"It is very important to impose strict regulations on the poaching and smuggling of endengered species.",
-        "key_words":["environment", "regulations", "extinction"]
+        "key_words":["environment", "regulation", "extinction", "poaching", "smuggling"]
     },
     {
         "id": 52,
@@ -269,5 +269,110 @@
         "id": 54,
         "sentence":"Nuclear power is a clean energy that can alleviate global warming by dramatically reducing CO2 emissions.",
         "key_words":["nuclear", "energy", "global warming", "climate change", "CO2", "greenhouse gas", "environment"]
+    },
+    {
+        "id": 100,
+        "sentence":"Restrictions will protect innocent children from exposure to obscene and harmful websites.",
+        "key_words":["internet", "child", "restriction", "regulation"]
+    },
+    {
+        "id": 101,
+        "sentence":"Regulations will prevent libelous comments from being posted.",
+        "key_words":["internet", "child", "restriction", "regulation"]
+    },
+    {
+        "id": 102,
+        "sentence":"Restrictions run counter to the spirit of freedom of expression which is guaranteed by the Constitution.",
+        "key_words":["internet", "child", "restriction", "regulation", "freedom", "right", "constitution", "expression"]
+    },
+    {
+        "id": 103,
+        "sentence":"Regulations will decrease the number of business transactions stimulated by the free flow of information.",
+        "key_words":["internet", "business", "restriction", "regulation", "transaction", "information"]
+    },
+    {
+        "id": 104,
+        "sentence":"Companies can increase their sales by enhancing their corporate image and expanding their consumer base.",
+        "key_words":["advertisement", "business", "company", "consumer"]
+    },
+    {
+        "id": 105,
+        "sentence":"Nowdays electronic media is becoming more and more popular as an increasing number of people use electronic devices.",
+        "key_words":["advertisement", "internet", "media", "device", "information"]
+    },
+    {
+        "id": 106,
+        "sentence":"Electronic media is far more convenient than voluminous printed materials.",
+        "key_words":["paper", "internet", "media", "device", "information", "book", "print"]
+    },
+    {
+        "id": 107,
+        "sentence":"The growing reliance on convenient electronic media may eventually lead to the demise of printed media.",
+        "key_words":["paper", "internet", "media", "device", "information", "book", "print"]
+    },
+    {
+        "id": 108,
+        "sentence":"People living in remote areas can gain access to higher education through e-learning.",
+        "key_words":["internet", "technology", "information", "education", "remote"]
+    },
+    {
+        "id": 109,
+        "sentence":"Social networking services carry the risk of online crimes such as identity theft and fraud.",
+        "key_words":["internet", "technology", "information", "SNS", "cyber", "security", "fraud"]
+    },
+    {
+        "id": 110,
+        "sentence":"Social networking services can cause online invation of privacy, and in the worst case encourage cyber bullying which can cause more harm to the victim than face-to-face bullying.",
+        "key_words":["internet", "technology", "information", "SNS", "cyber", "bully", "privacy"]
+    },
+    {
+        "id": 111,
+        "sentence":"SNS facilitates the dissemination of useful information among users.",
+        "key_words":["internet", "technology", "information", "SNS", "dissemination"]
+    },
+    {
+        "id": 112,
+        "sentence":"SNS will help boost business, working as a cost-effective advertising media.",
+        "key_words":["internet", "technology", "information", "SNS", "dissemination", "advertisement", "media", "business", "economy", "company"]
+    },
+    {
+        "id": 113,
+        "sentence":"SNS improves human relatiohnships.",
+        "key_words":["internet", "technology", "information", "SNS", "relation"]
+    },
+    {
+        "id": 114,
+        "sentence":"SNS helps shy or lsocially isolated people senior citizens connect with other people.",
+        "key_words":["internet", "technology", "information", "SNS", "isolation", "senior", "shy", "connect"]
+    },
+    {
+        "id": 114,
+        "sentence":"Although some people argue that SNS can be a time waster, human relationships are valuable assets.",
+        "key_words":["internet", "technology", "information", "SNS", "people", "time waster", "relationship", "asset"]
+    },
+    {
+        "id": 115,
+        "sentence":"Japan still falls far behind other developed countries in female empowerment.",
+        "key_words":["Japan", "gender", "female empowerment", "gender equality", "developed country"]
+    },
+    {
+        "id": 116,
+        "sentence":"Homosexual couples have equal rights to marriage just like heterosexual couples.",
+        "key_words":["gender", "homosexual", "right", "same-sex marriage"]
+    },
+    {
+        "id": 117,
+        "sentence":"Legalization of same-sex marriage will lead to elimination of prejudice or discrimination not only against homosexuality but also based on gender, race and religion, as a whole.",
+        "key_words":["gender", "homosexual", "same-sex marriage", "discrimination", "prejudice", "race", "religion"]
+    },
+    {
+        "id": 118,
+        "sentence":"Same-sex marriage will contribute to social stability because it fosters family ties and long-term relationships among gay couples.",
+        "key_words":["gender", "homosexual", "same-sex marriage", "discrimination", "prejudice"]
+    },
+    {
+        "id": 119,
+        "sentence":"Homosexual couples will contribute to society by adopting underpriviledged orphans and raising them as if they were their own offspring.",
+        "key_words":["gender", "homosexual", "orphan", "same-sex marriage"]
     }]
 }
