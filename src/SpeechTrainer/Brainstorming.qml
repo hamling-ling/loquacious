@@ -29,7 +29,7 @@ BrainstormingForm {
         delegate: Rectangle {
             id: itemDelegate
             width: listHost.width
-            height: 60
+            height: sentenceText.height + 20
             property int indexOfThisDelegate: index
             Row {
                 Text {
@@ -40,10 +40,10 @@ BrainstormingForm {
                     elide: Text.ElideRight
                 }
                 Text {
+                    id: sentenceText
                     leftPadding: 5
                     wrapMode: Text.WordWrap
                     width: listHost.width - indexText.width
-                    height: 30
                     text: sentence ? sentence: qsTr("")
                 }
             }

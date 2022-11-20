@@ -10,10 +10,10 @@ SpeechForm {
     }
 
     topicList {
-        delegate: Rectangle {
+        delegate: Item {
             id: itemDelegate
             width: listHost.width
-            height: 60
+            height: topicText.height + 20
             property int indexOfThisDelegate: index
             Row {
                 Text {
@@ -24,9 +24,9 @@ SpeechForm {
                     elide: Text.ElideRight
                 }
                 Text {
+                    id: topicText
                     leftPadding: 5
                     width: topicList.width * 19 / 20
-                    height: 60
                     wrapMode: Text.WordWrap
                     text: topicSentence ? topicSentence: qsTr("")
                 }
