@@ -2,16 +2,20 @@ import random
 import re
 import time
 import argparse
+from datetime import datetime
+
+TOPIC_FILE_NAME   = 'topics.txt'
+DEFAULT_TOPIC_NUM = 5
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-ns', '--noselection', action='store_true', required=False)
-
+parser.add_argument('-tn', '--topicnum', default=DEFAULT_TOPIC_NUM, type=int)
 args = parser.parse_args()
 
-def show_questions(file_name):
+def show_questions(file_name, topic_num):
     f           = open(file_name)
     lines       = f.readlines()
-    five_topics = random.sample(lines, 5)
+    five_topics = random.sample(lines, topic_num)
     for i, x in enumerate(five_topics):
         replaced = re.sub('^\d+', str(i+1), x).rstrip()
         print(replaced)
@@ -39,11 +43,15 @@ def wait_for(msg, sec):
         current_sec += 1.0
     
 def main():
-    # Show selectionand wait for 60 sec
+    # Initialize
+    random.seed(datetime.now().timestamp())
+
+    # Show selection
+    show_questions(TOPIC_FILE_NAME, args.topicnum)
+
+    # wait for 60 sec
     if not args.noselection:
-        file_name = 'topics.txt'
-        show_questions(file_name)
-        wait_for("select your topic", 60)
+        wait_for("select your topic", 60/5 * args.topicnum)
     
     # Wait for 120 sec and show progress
     wait_for("make your speech ", 120)

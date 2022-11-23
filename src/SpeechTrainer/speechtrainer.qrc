@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>topics.txt</file>
+        <file>dictums.json</file>
     </qresource>
 </RCC>

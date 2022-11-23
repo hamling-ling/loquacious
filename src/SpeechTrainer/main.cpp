@@ -5,23 +5,22 @@
 #include <QTranslator>
 #include <QFile>
 
-#include "mainmodel.h"
+#include "speechmodel.h"
+#include "brainstormingmodel.h"
 
 
 int main(int argc, char *argv[])
 {
     QGuiApplication app(argc, argv);
 
-
-
-
-    qmlRegisterType<locatious::MainModel>("Main", 1, 0, "MainModel");
+    qmlRegisterType<loquatious::SpeechModel>(       "Speech",        1, 0, "SpeechModel");
+    qmlRegisterType<loquatious::BrainstormingModel>("Brainstorming", 1, 0, "BrainstormingModel");
 
     qmlRegisterUncreatableMetaObject(
-        locatious::staticMetaObject,
-        "MainModelState",
+        loquatious::staticMetaObject,
+        "SpeechModelState",
         1, 0,
-        "MainModelState",
+        "SpeechModelState",
         "Error: only enums"
     );
 

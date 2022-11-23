@@ -12,11 +12,14 @@ qt_add_resources(RESOURCE_ADDED ${RESOURCE})
 
 qt_add_executable(appSpeechTrainer
     main.cpp
-    mainmodel.h mainmodel.cpp
+    speechmodel.h speechmodel.cpp
     countdowntimer.h countdowntimer.cpp
     topicdrawer.h topicdrawer.cpp
     topiclistmodel.h topiclistmodel.cpp
     topicitemmodel.h topicitemmodel.cpp
+    brainstormingmodel.h brainstormingmodel.cpp
+    dictum.h dictum.cpp
+    dictumlistmodel.h dictumlistmodel.cpp
     ${RESOURCE_ADDED}
 )
 
@@ -24,6 +27,9 @@ qt_add_qml_module(appSpeechTrainer
     URI SpeechTrainer
     VERSION 1.0
     QML_FILES main.qml
+    Home.qml HomeForm.ui.qml
+    Speech.qml SpeechForm.ui.qml
+    Brainstorming.qml BrainstormingForm.ui.qml
 )
 
 set_target_properties(appSpeechTrainer PROPERTIES
