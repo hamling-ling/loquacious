@@ -10,15 +10,16 @@ SpeechForm {
     }
 
     topicList {
+        model: mainModel.topicListModel
         delegate: Item {
             id: itemDelegate
-            width: listHost.width
+            width: listHost.width - 20
             height: topicText.height + 20
             property int indexOfThisDelegate: index
             Row {
                 Text {
                     id: indexText
-                    width: topicList.width/20
+                    width: listHost.width/20
                     height: 30
                     text: Number(index + 1) + qsTr(".")
                     elide: Text.ElideRight
@@ -26,7 +27,7 @@ SpeechForm {
                 Text {
                     id: topicText
                     leftPadding: 5
-                    width: topicList.width * 19 / 20
+                    width: itemDelegate.width - indexText.width
                     wrapMode: Text.WordWrap
                     text: topicSentence ? topicSentence: qsTr("")
                 }

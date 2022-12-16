@@ -10,6 +10,7 @@ Item {
 
     property alias btnToA: btnToA
     property alias btnToB: btnToB
+    property int kButtonHeight: 50
 
     GridLayout {
         id: rootGrid
@@ -42,7 +43,7 @@ Item {
                     anchors.horizontalCenter: parent.horizontalCenter
                     palette.buttonText: "black"
                     width: 100
-                    height: 30
+                    height: kButtonHeight
                     text: "Screen A"
                 }
                 Button {
@@ -50,7 +51,7 @@ Item {
                     anchors.horizontalCenter: parent.horizontalCenter
                     palette.buttonText: "black"
                     width: 100
-                    height: 30
+                    height: kButtonHeight
                     text: "Screen B"
                 }
             }

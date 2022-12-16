@@ -12,7 +12,8 @@ Item {
     property alias listHost: listHost
     property alias finishButton: finishButton
 
-    property int kButtonHeight: 30
+    property int kButtonWidth: 40
+    property int kButtonHeight: 40
 
     /*ListModel {
         id: debugModel
@@ -40,15 +41,15 @@ Item {
                 anchors.fill: parent
                 Rectangle {
                     id: upperBox
-                    width: 30
-                    height: 50
+                    width: finishButton.width
+                    height: finishButton.height
                     Button {
                         id: finishButton
                         anchors.top: parent.top
                         anchors.left: parent.left
                         palette.buttonText: "black"
-                        width: 30
-                        height: 30
+                        width: kButtonWidth
+                        height: kButtonHeight
                         text: "<"
                     }
                 }
@@ -89,14 +90,28 @@ Item {
                 height: parent.height
                 Rectangle {
                     id: listHost
-                    anchors.centerIn: parent
                     width: parent.width - 40
                     height: parent.height - 40
-                    ListView {
-                        id: dictumList
-                        anchors.fill: parent
-                        //model: debugModel
-                        interactive: false
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    ScrollView {
+                        anchors.horizontalCenter: parent.horizontalCenter
+                        width: parent.width
+                        height: parent.height
+                        clip: true
+                        ScrollBar.vertical.policy: ScrollBar.AsNeeded
+                        ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
+                        contentWidth: width
+                        contentHeight: dictumList.height
+                        ListView {
+                            id: dictumList
+                            anchors.top: parent.top
+                            anchors.right: parent.right
+                            anchors.leftMargin: 10
+                            //anchors.rightMargin: 10
+                            anchors.bottomMargin: 10
+                            //model: debugModel
+                            interactive: true
+                        }
                     }
                 }
             }

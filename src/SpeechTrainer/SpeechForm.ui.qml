@@ -18,18 +18,19 @@ Item {
 
     property alias finishButton: finishButton
 
-    property int kButtonWidth: 180
-    property int kButtonHeight: 30
+    property int kButtonWidth: 40
+    property int kButtonHeight: 40
     property bool isVertical: width > height
 
+    /*
     ListModel {
         id: debugModel
-        ListElement { topcId: 0; topicSentence: "Dog"      }
-        ListElement { topcId: 1; topicSentence: "Cat"      }
-        ListElement { topcId: 2; topicSentence: "Bird"     }
-        ListElement { topcId: 3; topicSentence: "Rat"      }
-        ListElement { topcId: 4; topicSentence: "Elephant" }
-    }
+        ListElement { topicId: 0; topicSentence: "Dog ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg gggggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg gggggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg" }
+        ListElement { topicId: 1; topicSentence: "Cat ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg gggggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg gggggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg" }
+        ListElement { topicId: 2; topicSentence: "Bird ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg gggggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg gggggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg"     }
+        ListElement { topicId: 3; topicSentence: "Rat  ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg gggggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg gggggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg"      }
+        ListElement { topicId: 4; topicSentence: "Elephant ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg gggggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg gggggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg ggg" }
+    }*/
 
     GridLayout {
         id: rootGrid
@@ -48,29 +49,38 @@ Item {
 
             Button {
                 id: finishButton
-                width: 30
-                height: 30
+                width: kButtonWidth
+                height: kButtonHeight
                 palette.buttonText: "black"
                 text: qsTr("<")
             }
 
             Rectangle {
                 id: listHost
-                anchors.centerIn: parent
-                width: topicArea.width * 3/4
-                height: topicArea.height * 3/4
 
-                //color: "gray"
+                anchors.top: finishButton.bottom
+                anchors.left: parent.left
+                anchors.right: parent.right
+                anchors.bottom: parent.bottom
+                anchors.margins: 10
 
-                ListView {
-                    id: topicList
-                    anchors.fill: parent
-
-                    model: mainModel.topicListModel
-                    //model: debugModel
-                    interactive: false
-                    visible: mainModel.state !== SpeechModelState.IDLE
+                ScrollView {
+                    anchors.verticalCenter: parent
+                    width: parent.width - 20
+                    height: parent.height - 20
+                    clip: true
+                    ScrollBar.vertical.policy: ScrollBar.AsNeeded
+                    ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
+                    contentWidth: parent.width
+                    contentHeight: topicList.height
+                    ListView {
+                        id: topicList
+                        anchors.centerIn: parent
+                        //model: debugModel
+                        interactive: true
+                    }
                 }
+
                 Rectangle {
                     id: emptyTopic
                     anchors.fill: parent
@@ -78,7 +88,7 @@ Item {
                     Text {
                         anchors.centerIn: parent
                         leftPadding: 5
-                        width: topicList.width * 19 / 20
+                        width: topicList.width - 40
                         wrapMode: Text.WordWrap
                         text: qsTr("Speech topics will be displayed here when you press Start Button.")
                     }
