@@ -143,3 +143,153 @@
 143. Are Japanese old temples worth preserving?
 144. Should subordinate workers be asked to evaluate their supervisors?
 145. Agree or disagree: The death penalty should be banned in Japan 
+200. Should the developed world help developing countries overcome poverty?
+201. Which is the greater threat to humankind, terrorism or world hunger?
+202. What are the root cause of terrorism?
+203. Is world peace a remote possibility?
+204. Is there such a thing as a justifiable war?
+205. Can violence ever be justified in support of a political cause?
+206. Should capital punishment be abolished?
+207. Should Japan play a bigger role in international affairs?
+208. Do neclear weapons make the world less secure?
+209. What are the obstacles to nuclear disarmament?
+210. Slhould all nations have the right to develop nuclear weapons?
+211. What role should the United Nations play in international politics?
+212. Should the UN Security Council be expanded?
+213. Do you think the UN activities have been successful?
+214. Should economic sanctions be used to achieve foreign policy objectives?
+215. Will free trade benefit third world countries?
+216. Is foreign aid an effective way to promote economic growth in developing countries?
+217. Should developed nations do more to help developing nations?
+218. What are the social responsibilities of large corporations?
+219. Do business have certain obligations to local community?
+220. Which is more important for companies, product quality or profit motive?
+221. Should job promotions be based on performance or on seniority?
+222. Should the mandatory retirement system be abolished?
+223. Will the trend toward part-time employment negatively affect Japanese society?
+224. Why do the increasing number of young people work part time?
+225. Should major companies in financial trouble receive government support?
+226. Should the university system in Japan be reformed.
+227. How can creativity be developed?
+228. Why is creativity necessary?
+229. Can creativity be taught?
+230. Should schools encourage more individuality in students?
+231. Do the advantages of school uniforms outweigh the disadavantages?
+232. Considering its little use outside the school environment, don't you think that casual clothes are much economical than school uniforms?
+233. Do the advantages of gifted student's grade-skipping outweigh the disadvantages?
+234. Balance between EQ/IQ development is essential for healty growth of children. If development of their EQ cannot keep up with that of their IQ due to grade-skipping, don't you think this system is unsuccessful?
+235. Should corporal punishment be banned in schools.
+236. What country has an ideal education system that can be a good model for other countries?
+237. Is the Japanese education systems a good model for other countries?
+238. Are educational standards in Japan declining?
+239. Should teachers be responsible for parenting their students?
+240. Don't you think that schoolteachers are too busy teaching academic subjects to play parenting roles?
+241. What are the causes of juvenile delinquency?
+242. What are countermeasures for juvenile delinquency?
+243. Do the benefits of euthanasia outweight the disadavantages?
+244. What country has the best healthcare system in the world?
+245. Is medical care too expensive in Japan?
+246. What makes organ transplants so controversial?
+247. Should organ transplants be made more available in Japan?
+248. What are the causes of mental illnesses?
+249. Whay is the number of people suffering from mental illnesses increasins these days?
+250. Should smoking be banned in public places?
+251. Don't you think that a smoking ban in public places will decrease the number of customers in pubs and cafes and therefore will undermine the local economy?
+252. Don't you thin k that a decrease in the number of smokers will undermine the national economy?
+253. Should cigarette advertisements be banned?
+254. Should nuclear power be promoted?
+255. Do the benefits of genetic engineering outweight the dangers?
+256. Should couples have the right to choose the sex of their children?
+257. Has technology changed education for the better?
+258. Can you describe the disadavantages of using the Internet in classrooms?
+259. Agree or disagree: space exploration should be continued.
+260. What is the future of robots in daily life?
+261. Will the use of solar energy become widespread in the future?
+262. Is environmental protection compatible with economic growth?
+263. How should companies and individuals make efforts to protect the environment?
+264. What are the government's roles?
+265. Do the benefits of daylight saving time outweight the disadavantages?
+266. Should daylight saving time be implemented again in Japan?
+267. Can animal testing be justified?
+268. Is the extinction of some plant and animal species inevitable? If so, how is it possible to protect them from extinction?
+269. How serious are current environmental problems?
+270. Agree or disagree: National identity is becoming less important in today's global society.
+271. Is multiculturalism beneficial to society?
+272. What are the disadvantages of multiculturalism?
+273. Is religion necessary for society?
+274. Some people argue that religion causes wars in the world without contributing to social stability.
+275. Do the benefits of hosting international sporting events outweight the disadvantages?
+276. Is Japan making enought efforts to preserve its cultural heritage?
+277. Why is it important to preserve cultural assets?
+278. Does art make an essential contribution to society?
+279. What do you think about the export of Japanese pop culture to foreign countries?
+280. Will society with an aging population face a crisis in the future?
+281. How can we deal with a superaging society?
+282. Is it necessary for couples to share household chores?
+283. Do you think that women should stay at home to take care of children?
+284. Can working parents play a sufficient role in raising their children?
+285. Do the benefits of same-sex marriage outweight its disadvantages?
+286. Do you still support same-sex marriage despite the fact that it will impose a highter financial burden on taxpayers?
+287. Should Japan make more efforts to achieve gender equality?
+288. Do you believe in gender equality?
+289. Why do few fathers take child-care leave in Japan?
+290. Do the benefits of social networking service outweight the disadvantages?
+291. Does the benefit of the Internet outweight its disadvantages?
+292. What are effective countermeasures for increasing cyber-crime?
+293. What are the benefits of online shopping?
+294. Will the Internet harm interpersonal communication?
+295. Does individual privacy outweight the public's right to know?
+296. Should names or photos of juvenile criminals be made public?
+297. Should playing online games be discouraged?
+298. What are the effects of TV and movie violence on young viewers?
+299. What do you think about some game software which can meet educational purposes?
+300. Will electronic media replace almost all printed materials in the future?
+301. Do the advantages of advertising outweight its disadvantages?
+302. Don't you think that advertising promotes mass consumption, thus contributing to a throw away society?
+303. Should cigarette advertisements be banned?
+304. How objective or biased is current news coverage in the world?
+305. Should Internet access and contents be restricted by law?
+401. Some people believe that colonizing Mars is not worth the expense and risks involved. What do you think about that?
+402. Do you think that space travel will someday become affordable to ordinary people?
+403. Should the world's nations cooperate more on space research?
+404. Should the world's nations cooperate more on space research?
+405. Does tourism in general harm the environment?
+406. Will commercial space travel cecome necessary in the future?
+407. Should the government regulate tech companies regarding AI?
+408. Should young people study more mathematics and programming in the future?
+409. Do you think AI could actually be beneficial for workers?
+410. You mentioned that new jobs will be created in the future, but that will require retraining workers. Do you think it's possible to retrain people to work in different sectors?
+411. Do Japanese IT companies need to cooperate more with their foreign competitors?
+412. Has the modern lifestyle harmed people's health?
+413. How has modern technology affected young people in good ways?
+414. Is the internet making young people more vulnerable?
+415. Do you think wars are more likely if fresh water runs outt in some countries?
+416. You mentioned the need to increase awareness about the shortage of fresh water. Do you believe people today take water for granted?
+417. Do you think technology may help increase our future supply of fresh water?
+418. What can be done to help solve the fresh water shortages taking place around the workd?
+419. Some people believe that poor people are not given enoguh access to healty food. What do you think about that?
+420. Should governments of diveloped countries help the poor in their own country before giving aid to other countries?
+421. Do you think the free trade of food could solve problems with food security?
+422. Do you agree that war between countries is inevitable?
+423. Agree or disagree: Every country should have food self-sufficiency.
+424. Some people believe that a universal basic income would create a "welfare state" where not one wourld work, and this would damage society. What do you think about that?
+425. Do you think corporations have a role in funding a universal basic income?
+426. Do you believe that truly equal society is possible?
+427. Should Japan introduce a universal basic income?
+428. Why do you think languages such as English, Chinese and Spanish are becoming so dominant?
+429. Do you think there may be some advantages to having major languages that are spoken worldwide?
+430. What can be dome to protect dying languages?
+431. On a slightly different topic, what other aspects of culture are important to preserve?
+432. Should minority languages be preserved?
+433. Should art and music be eliminated from school curriculums?
+434. Is it important to learn from history?
+435. What do you think Japan's role should be in the world today?
+436. Will Asia dominate the world stage in the near future?
+437. Agree or disagree: History shows that people are becoming more civilized.
+438. Is it always good to prolong the life of the terminally ill?
+439. What do you believe are the best ways to combat racial discrimination if it cannot be eliminated?
+440. Can violent protests in the name of racial equality ever be justified?
+441. Some people say that younger generations are less likely to fall into racism these days. What do you think about that?
+442. Can racial discrimination be eliminated?
+443. How can Japan best provide assistance to less developed countries?
+
